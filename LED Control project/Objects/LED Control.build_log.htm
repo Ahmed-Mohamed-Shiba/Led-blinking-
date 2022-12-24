@@ -1,0 +1,345 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ahmed shiba, caito university, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.7.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+E:\Eng\Advaneced Embedded Systems - egfwd\LED Control\LED Control.uvprojx
+Project File Date:  10/25/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Mcal/Gpt.c(16): warning: In file included from...
+./Mcal/Inc\Gpt.h(82): warning: // comments are not allowed in this language [-Wcomment]
+//void Timer0__Init(uint16 Timer_Tick);
+^
+Mcal/Gpt.c(48): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler(void)
+     ^
+Mcal/Gpt.c(48): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler(void)
+^
+static 
+Mcal/Gpt.c(73): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    SYSTICK_CTRL_REG    &= ~(0x05);                         /* Disable the SysTick Timer by Clear the ENABLE Bit */
+                        ~~ ^~~~~~~
+3 warnings generated.
+compiling Gpt.c...
+Config/Gpio_PBcfg.c(12): warning: In file included from...
+./Mcal/Inc\Gpio.h(17): warning: In file included from...
+./Mcal/Inc/Gpio_Types.h(18): warning: In file included from...
+./Config\Gpio_Cfg.h(95): warning: no newline at end of file [-Wnewline-eof]
+   
+   ^
+Config/Gpio_PBcfg.c(12): warning: In file included from...
+./Mcal/Inc\Gpio.h(17): warning: In file included from...
+./Mcal/Inc/Gpio_Types.h(49): warning: // comments are not allowed in this language [-Wcomment]
+//typedef uint8 Port_PinOutputCurrentType;
+^
+Config/Gpio_PBcfg.c(16): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                                                                                                                                                                                PortConf_Pin01_CHANNEL_NUM,
+                                                                                                                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                                                                                                                {
+./Config\Gpio_Cfg.h(61): note: expanded from macro 'PortConf_Pin01_CHANNEL_NUM'
+#define PortConf_Pin01_CHANNEL_NUM           (uint8)1 /* Pin 1 in PORTF */
+                                             ^
+Config/Gpio_PBcfg.c(26): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                                                                                                                                                                                PortConf_Pin02_CHANNEL_NUM,
+                                                                                                                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                                                                                                                {
+./Config\Gpio_Cfg.h(62): note: expanded from macro 'PortConf_Pin02_CHANNEL_NUM'
+#define PortConf_Pin02_CHANNEL_NUM           (uint8)4 /* Pin 4 in PORTF */
+                                             ^
+Config/Gpio_PBcfg.c(34): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                                                                                                                                                                                PortConf_Pin03_CHANNEL_NUM,
+                                                                                                                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                                                                                                                {
+./Config\Gpio_Cfg.h(63): note: expanded from macro 'PortConf_Pin03_CHANNEL_NUM'
+#define PortConf_Pin03_CHANNEL_NUM           (uint8)0 /* Pin 0 in PORTF */
+                                             ^
+Config/Gpio_PBcfg.c(40): warning: no newline at end of file [-Wnewline-eof]
+                                                                                                                                                                                };
+                                                                                                                                                                                  ^
+6 warnings generated.
+compiling Gpio_PBcfg.c...
+App/main.c(15): warning: In file included from...
+./Mcal/Inc\Gpio.h(17): warning: In file included from...
+./Mcal/Inc/Gpio_Types.h(18): warning: In file included from...
+./Config\Gpio_Cfg.h(95): warning: no newline at end of file [-Wnewline-eof]
+   
+   ^
+App/main.c(15): warning: In file included from...
+./Mcal/Inc\Gpio.h(17): warning: In file included from...
+./Mcal/Inc/Gpio_Types.h(49): warning: // comments are not allowed in this language [-Wcomment]
+//typedef uint8 Port_PinOutputCurrentType;
+^
+App/main.c(16): warning: In file included from...
+./Mcal/Inc\Gpt.h(82): warning: // comments are not allowed in this language [-Wcomment]
+//void Timer0__Init(uint16 Timer_Tick);
+^
+App/main.c(19): warning: // comments are not allowed in this language [-Wcomment]
+//#include "TM4C123.h"
+^
+App/main.c(31): warning: no previous extern declaration for non-static variable 'Time_On' [-Wmissing-variable-declarations]
+volatile uint32 Time_On = 0;
+                ^
+App/main.c(31): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32 Time_On = 0;
+         ^
+App/main.c(32): warning: no previous extern declaration for non-static variable 'Time_Off' [-Wmissing-variable-declarations]
+volatile uint32 Time_Off = 0;
+                ^
+App/main.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32 Time_Off = 0;
+         ^
+App/main.c(33): warning: no previous extern declaration for non-static variable 'Flag' [-Wmissing-variable-declarations]
+volatile uint8 Flag = 0;
+               ^
+App/main.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8 Flag = 0;
+         ^
+App/main.c(34): warning: no previous extern declaration for non-static variable 'Time' [-Wmissing-variable-declarations]
+volatile uint32 Time = 1;
+                ^
+App/main.c(34): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32 Time = 1;
+         ^
+App/main.c(35): warning: no previous extern declaration for non-static variable 'Counter' [-Wmissing-variable-declarations]
+volatile uint32 Counter = 0;
+                ^
+App/main.c(35): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32 Counter = 0;
+         ^
+App/main.c(98): warning: no previous prototype for function 'GPIOF_Handler' [-Wmissing-prototypes]
+void GPIOF_Handler (void)
+     ^
+App/main.c(98): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIOF_Handler (void)
+^
+static 
+10 warnings generated.
+compiling main.c...
+Mcal/IntCtrl.c(66): warning: // comments are not allowed in this language [-Wcomment]
+                // APINT = 0xFA050 | 0x00001234;
+                ^
+Mcal/IntCtrl.c(83): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                GPIO_PORTF_IS_REG    &= ~(0x10001);      /* PF4 detect edges */
+                                     ~~ ^~~~~~~~~~
+Mcal/IntCtrl.c(84): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIO_PORTF_IBE_REG   &= ~(0b10001);      /* PF4 will detect a certain edge */
+                              ^
+Mcal/IntCtrl.c(84): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTF_IBE_REG   &= ~(0b10001);      /* PF4 will detect a certain edge */
+                         ~~ ^~~~~~~~~~
+Mcal/IntCtrl.c(85): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIO_PORTF_IEV_REG   &= ~(0b10001);      /* PF4 will detect a rising edge */
+                              ^
+Mcal/IntCtrl.c(85): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+    GPIO_PORTF_IEV_REG   &= ~(0b10001);      /* PF4 will detect a rising edge */
+                         ~~ ^~~~~~~~~~
+Mcal/IntCtrl.c(86): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIO_PORTF_ICR_REG   |= (0b10001);       /* Clear Trigger flag for PF4 (Interupt Flag) */
+                             ^
+Mcal/IntCtrl.c(87): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIO_PORTF_IM_REG    |= (0b10001);       /* Enable Interrupt on PF4 pin */
+                             ^
+8 warnings generated.
+compiling IntCtrl.c...
+Mcal/Gpio.c(16): warning: In file included from...
+./Mcal/Inc\Gpio.h(17): warning: In file included from...
+./Mcal/Inc/Gpio_Types.h(18): warning: In file included from...
+./Config\Gpio_Cfg.h(95): warning: no newline at end of file [-Wnewline-eof]
+   
+   ^
+Mcal/Gpio.c(16): warning: In file included from...
+./Mcal/Inc\Gpio.h(17): warning: In file included from...
+./Mcal/Inc/Gpio_Types.h(49): warning: // comments are not allowed in this language [-Wcomment]
+//typedef uint8 Port_PinOutputCurrentType;
+^
+Mcal/Gpio.c(84): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_LOCK_REG_OFFSET) = 0x4C4F434B;                     /* Unlock the GPIOCR register */   
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mcal/Gpio.c(85): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_COMMIT_REG_OFFSET) , Port_Pins[PinId].Pin_Num);  /* Set the corresponding bit in GPIOCR register to allow changes on this pin */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(101): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ANALOG_MODE_SEL_REG_OFFSET) , Port_Pins[PinId].Pin_Num);      /* Clear the corresponding bit in the GPIOAMSEL register to disable analog functionality on this pin */
+      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(102): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ALT_FUNC_REG_OFFSET) , Port_Pins[PinId].Pin_Num);             /* Disable Alternative function for this pin by clear the corresponding bit in GPIOAFSEL register */
+      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(103): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~(0x0000000F << (Port_Pins[PinId].Pin_Num * 4));     /* Clear the PMCx bits for this pin */
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mcal/Gpio.c(103): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+      *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~(0x0000000F << (Port_Pins[PinId].Pin_Num * 4));     /* Clear the PMCx bits for this pin */
+                                                                                 ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mcal/Gpio.c(104): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIGITAL_ENABLE_REG_OFFSET) , Port_Pins[PinId].Pin_Num);        /* Set the corresponding bit in the GPIODEN register to enable digital functionality on this pin */
+      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(109): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ANALOG_MODE_SEL_REG_OFFSET) , Port_Pins[PinId].Pin_Num);      /* Set the corresponding bit in the GPIOAMSEL register to disable analog functionality on this pin */
+      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(110): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ALT_FUNC_REG_OFFSET) , Port_Pins[PinId].Pin_Num);             /* Enable Alternative function for this pin by clear the corresponding bit in GPIOAFSEL register */
+      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(111): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~(0x0000000F << (Port_Pins[PinId].Pin_Num * 4));     /* Clear the PMCx bits for this pin */
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mcal/Gpio.c(111): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+      *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~(0x0000000F << (Port_Pins[PinId].Pin_Num * 4));     /* Clear the PMCx bits for this pin */
+                                                                                 ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mcal/Gpio.c(112): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIGITAL_ENABLE_REG_OFFSET) , Port_Pins[PinId].Pin_Num);        /* Clear the corresponding bit in the GPIODEN register to enable digital functionality on this pin */
+      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(117): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ANALOG_MODE_SEL_REG_OFFSET) , Port_Pins[PinId].Pin_Num);      /* Clear the corresponding bit in the GPIOAMSEL register to disable analog functionality on this pin */
+      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(118): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ALT_FUNC_REG_OFFSET) , Port_Pins[PinId].Pin_Num);             /* Enable Alternative function for this pin by clear the corresponding bit in GPIOAFSEL register */
+      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(119): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~((Port_Pins[PinId].Channel_Mode & 0x0000000F) << (Port_Pins[PinId].Pin_Num * 4));     /* Adjust the PMCx bits for this pin */
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mcal/Gpio.c(119): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+      *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~((Port_Pins[PinId].Channel_Mode & 0x0000000F) << (Port_Pins[PinId].Pin_Num * 4));     /* Adjust the PMCx bits for this pin */
+                                                                                 ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mcal/Gpio.c(120): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIGITAL_ENABLE_REG_OFFSET) , Port_Pins[PinId].Pin_Num);        /* Set the corresponding bit in the GPIODEN register to enable digital functionality on this pin */
+      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(127): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIR_REG_OFFSET) , Port_Pins[PinId].Pin_Num);                /* Set the corresponding bit in the GPIODIR register to configure it as output pin */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(131): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+            SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DATA_REG_OFFSET) , Port_Pins[PinId].Pin_Num);          /* Set the corresponding bit in the GPIODATA register to provide initial value 1 */
+            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(135): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+            CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DATA_REG_OFFSET) , Port_Pins[PinId].Pin_Num);        /* Clear the corresponding bit in the GPIODATA register to provide initial value 0 */
+            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(140): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIR_REG_OFFSET) , Port_Pins[PinId].Pin_Num);             /* Clear the corresponding bit in the GPIODIR register to configure it as input pin */
+        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(144): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+            SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_UP_REG_OFFSET) , Port_Pins[PinId].Pin_Num);       /* Set the corresponding bit in the GPIOPUR register to enable the internal pull up pin */
+            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(148): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+            SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_DOWN_REG_OFFSET) , Port_Pins[PinId].Pin_Num);     /* Set the corresponding bit in the GPIOPDR register to enable the internal pull down pin */
+            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(17): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT) (REG|=(1<<BIT))
+                          ^~~
+Mcal/Gpio.c(152): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+            CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_UP_REG_OFFSET) , Port_Pins[PinId].Pin_Num);     /* Clear the corresponding bit in the GPIOPUR register to disable the internal pull up pin */
+            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(153): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+            CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_DOWN_REG_OFFSET) , Port_Pins[PinId].Pin_Num);   /* Clear the corresponding bit in the GPIOPDR register to disable the internal pull down pin */
+            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(20): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT) (REG&=(~(1<<BIT)))
+                            ^~~
+Mcal/Gpio.c(56): warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+    volatile uint32 delay = 0;
+                    ^
+28 warnings generated.
+compiling Gpio.c...
+linking...
+Program Size: Code=2722 RO-data=670 RW-data=4 ZI-data=632  
+".\Objects\LED Control.axf" - 0 Error(s), 55 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

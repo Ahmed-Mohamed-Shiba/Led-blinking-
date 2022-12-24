@@ -1,0 +1,61 @@
+Dependencies for Project 'LED Control', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6180000::V6.18::ARMCLANG
+F (.\Common\Common_Macros.h)(0x5E84FDC5)()
+F (.\Common\Compiler.h)(0x5F471B1A)()
+F (.\Common\Platform_Types.h)(0x5F471B1A)()
+F (.\Common\Std_Types.h)(0x5F471B1A)()
+F (.\Mcal\Gpio.c)(0x63565146)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Common -I ./Config -I ./Hal/Inc -I ./Mcal/Inc-I./RTE/_Target_1-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include"-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="537" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/gpio.o -MD)
+I (Common\Std_Types.h)(0x5F471B1A)
+I (Common\Platform_Types.h)(0x5F471B1A)
+I (Common\Compiler.h)(0x5F471B1A)
+I (Mcal\Inc\Gpio.h)(0x6357FE20)
+I (Mcal\Inc\Gpio_Types.h)(0x635822A7)
+I (Config\Gpio_cfg.h)(0x6358228D)
+I (Common\Common_Macros.h)(0x5E84FDC5)
+F (.\Mcal\Inc\Gpio.h)(0x6357FE20)()
+F (.\Mcal\Inc\Gpio_Types.h)(0x635822A7)()
+F (.\Mcal\Gpt.c)(0x63583F01)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Common -I ./Config -I ./Hal/Inc -I ./Mcal/Inc-I./RTE/_Target_1-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include"-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="537" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/gpt.o -MD)
+I (Common\tm4c123gh6pm_registers.h)(0x6357B444)
+I (Common\Std_Types.h)(0x5F471B1A)
+I (Common\Platform_Types.h)(0x5F471B1A)
+I (Common\Compiler.h)(0x5F471B1A)
+I (Mcal\Inc\Gpt.h)(0x63583782)
+F (.\Mcal\Inc\Gpt.h)(0x63583782)()
+F (.\Mcal\IntCtrl.c)(0x63584BFA)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Common -I ./Config -I ./Hal/Inc -I ./Mcal/Inc-I./RTE/_Target_1-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include"-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="537" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/intctrl.o -MD)
+I (Common\tm4c123gh6pm_registers.h)(0x6357B444)
+I (Common\Std_Types.h)(0x5F471B1A)
+I (Common\Platform_Types.h)(0x5F471B1A)
+I (Common\Compiler.h)(0x5F471B1A)
+I (Mcal\Inc\IntCtrl.h)(0x63584BED)
+F (.\Mcal\Inc\IntCtrl.h)(0x63584BED)()
+F (.\Config\Gpio_Cfg.h)(0x6358228D)()
+F (.\Config\Gpio_PBcfg.c)(0x6358228D)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Common -I ./Config -I ./Hal/Inc -I ./Mcal/Inc-I./RTE/_Target_1-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include"-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="537" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/gpio_pbcfg.o -MD)
+I (Mcal\Inc\Gpio.h)(0x6357FE20)
+I (Mcal\Inc\Gpio_Types.h)(0x635822A7)
+I (Common\Std_Types.h)(0x5F471B1A)
+I (Common\Platform_Types.h)(0x5F471B1A)
+I (Common\Compiler.h)(0x5F471B1A)
+I (Config\Gpio_Cfg.h)(0x6358228D)
+I (Common\Common_Macros.h)(0x5E84FDC5)
+F (.\App\main.c)(0x63584EBB)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Common -I ./Config -I ./Hal/Inc -I ./Mcal/Inc-I./RTE/_Target_1-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include"-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="537" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/main.o -MD)
+I (Mcal\Inc\Gpio.h)(0x6357FE20)
+I (Mcal\Inc\Gpio_Types.h)(0x635822A7)
+I (Common\Std_Types.h)(0x5F471B1A)
+I (Common\Platform_Types.h)(0x5F471B1A)
+I (Common\Compiler.h)(0x5F471B1A)
+I (Config\Gpio_Cfg.h)(0x6358228D)
+I (Common\Common_Macros.h)(0x5E84FDC5)
+I (Mcal\Inc\Gpt.h)(0x63583782)
+I (Mcal\Inc\IntCtrl.h)(0x63584BED)
+I (Common\tm4c123gh6pm_registers.h)(0x6357B444)
+F (RTE/Device/TM4C123GH6PM/startup_TM4C123.s)(0x51B6E406)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include"-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-Wa,armasm,--pd,"__UVISION_VERSION SETA 537" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_tm4c123.o)
+F (RTE/Device/TM4C123GH6PM/system_TM4C123.c)(0x6353ED23)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Common -I ./Config -I ./Hal/Inc -I ./Mcal/Inc-I./RTE/_Target_1-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include"-I"C:/Users/Ahmed Shiba/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="537" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/system_tm4c123.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6252B538)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EF2F6)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F9F3E)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
+I (C:\Users\Ahmed Shiba\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
